@@ -156,7 +156,7 @@ function checkSubmit(){
 //And relocates the user to that address -> Python
 //will handle it from there
 function newLocation(){
-	var newLoc="./formsubmit/";
+	var newLoc="http://techwesley.buzz/formsubmit/";
 	var newEnd=""
 	var vals=answers.entries();
 	for(var val of vals){
