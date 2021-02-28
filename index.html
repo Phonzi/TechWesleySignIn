@@ -1,6 +1,76 @@
 <!DOCTYPE html>
 
 <html>
-	<h1>Hello, World</h1>
+
+<head>
+	<link rel="stylesheet" href="./SignIn.css">
+</head>
+
+
+
+
+<body onload="hideShowSections();cookieCheck();" onkeypress="checkSubmit()">
+<div class="outerLayer">
+	<div class="box titleBox">
+		<h2 class="bigTitle">Welcome To Tech Wesley</h2>
+	</div>
+	<div class="box areYouThem">
+		<h4 class="smallTitle"> Are you a Resident? </h4>
+		<button type="button" class="ynbutton"
+			onclick="buttonColorChange('areYouThem','Yes')">Yes</button>
+		<button type="button" class="ynbutton"
+			onclick="buttonColorChange('areYouThem','No')">No</button>
+	</div>
+	<div class="box getName">
+		<h4 class="smallTitle"> What's your name? </h4>
+		<input class="input" type="text" placeholder="Last, First">
+	</div>
+	<div class="box firstTimer">
+		<h4 class="smallTitle"> Is this your first time at Tech Wesley? </h4>
+		<button type="button" class="ynbutton"
+			onclick="buttonColorChange('firstTimer','Yes')">Yes</button>
+		<button type="button" class="ynbutton"
+			onclick="buttonColorChange('firstTimer','No')">No</button>
+	</div>
+	<div class="box getEmail">
+		<h4 class="smallTitle"> Could we get your phone number? </h4>
+		<input class="input" type="text" placeholder="">
+	</div>
+	<div class="box isAStudent">
+		<h4 class="smallTitle"> Are you a GT student? </h4>
+		<button type="button" class="ynbutton"
+			onclick="buttonColorChange('isAStudent','Yes')">Yes</button>
+		<button type="button" class="ynbutton"
+			onclick="buttonColorChange('isAStudent','No')">No</button>
+	</div>
+	<div class="box getMajor">
+		<h4 class="smallTitle"> What major are you? </h4>
+		<input class="input" type="text" placeholder="CS / CompE / EE etc.">
+	</div>
+	<div class="box getYear">
+		<h4 class="smallTitle"> What year are you at Tech? </h4>
+		<button type="button" class="ynbutton"
+			onclick="buttonColorChange('getYear','First')">First</button>
+		<button type="button" class="ynbutton"
+			onclick="buttonColorChange('getYear','Second')">Second</button>
+		<button type="button" class="ynbutton"
+			onclick="buttonColorChange('getYear','Third')">Third</button>
+		<button type="button" class="ynbutton"
+			onclick="buttonColorChange('getYear','Fourth')">Fourth</button>
+		<button type="button" class="ynbutton"
+			onclick="buttonColorChange('getYear','Fifth+')">Fifth+</button>
+	</div>
+	<div class="box getEvent">
+		<h4 class="smallTitle"> What are you here for? </h4>
+	</div>
+	<div class="box subBox">
+		<button type="button" class="submit" onclick="newLocation()">Submit</button>
+	</div>
+</div>
+</body>
+
+
+<script type="text/javascript" src="./Events.js"></script>
+<script type="text/javascript" src="./SignIn.js"></script>
 
 </html>

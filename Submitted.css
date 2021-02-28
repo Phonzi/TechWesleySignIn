@@ -1,0 +1,71 @@
+html,body{
+	width: 100%;
+	margin: 0px;
+}
+
+
+
+.outerLayer{
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+	width:100%;
+	background-image:url("./Yard.jpg");
+	background-repeat: repeat repeat;
+	background-position: center;
+	background-size: cover;
+	height:100%;
+}
+
+
+.innerLayer{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	width:80%;
+	background-color: #aabbcc;
+	margin-top:100px;
+	padding-bottom: 30px;
+	margin-bottom:100px;
+}
+
+
+.welcomeTitle{
+	background-color:#003057;
+	color:#e0bf5c;
+	width:100%;
+	text-align:center;
+	font-size: 200%;
+}
+
+.content{
+    width:100%;
+}
+
+.contentText{
+    text-align:center;
+    width:90%;
+    padding-left:5%;
+    padding-right:5%;
+}
+
+.img{
+    width:60%;
+}
+
+.linkList{
+	list-style-type: none;
+}
+.linkList *{
+	color: #0034ef;
+	text-decoration:none;
+}
+
+.subTitle{
+	font-size: 200%;
+}
+.subNote{
+	font-size: 200%;
+}
+
+
